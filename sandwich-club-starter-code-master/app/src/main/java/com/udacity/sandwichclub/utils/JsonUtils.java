@@ -18,11 +18,10 @@ public class JsonUtils {
             //get root
             JSONObject root = new JSONObject(json);
             //get name obj
-            JSONObject name = new JSONObject("name");
             //get values in name obj
-            String mainName = name.getString("mainName");
+            String mainName = root.getJSONObject("name").getString("mainName");
             //get aka names
-            JSONArray aka = name.getJSONArray("alsoKnownAs");
+            JSONArray aka = root.getJSONObject("name").getJSONArray("alsoKnownAs");
             List<String> akaList = new ArrayList<>();
             for (int x = 0; x < aka.length(); x++) {
                 akaList.add(aka.getString(x));
