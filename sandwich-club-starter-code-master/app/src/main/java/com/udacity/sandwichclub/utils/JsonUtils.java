@@ -32,13 +32,6 @@ public class JsonUtils {
             String description = root.getString("description");
             //get image
             String image = root.getString("image");
-
-            //log verbose to make sure they are correct values
-            Log.v("Parsing", "mainName is: " + mainName);
-            Log.v("Parsing", "origin is: " + origin);
-            Log.v("Parsing", "description is: " + description);
-            Log.v("Parsing", "image is: " + image);
-
             //get ingredients
             JSONArray ingredients = root.getJSONArray("ingredients");
             List<String> ingredientList = new ArrayList<>();

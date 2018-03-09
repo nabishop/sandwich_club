@@ -67,7 +67,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_also_known_as_label"
                 android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/also_known_tv"
                 android:layout_width="wrap_content"
@@ -85,7 +84,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_ingredients_label"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:id="@+id/ingredients_tv"
