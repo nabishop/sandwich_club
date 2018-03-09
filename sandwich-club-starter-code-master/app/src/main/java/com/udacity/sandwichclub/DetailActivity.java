@@ -61,7 +61,6 @@ public class DetailActivity extends AppCompatActivity {
 
     private void populateUI(Sandwich sandwich) {
         //text views
-        TextView nametv = findViewById(R.id.name_tv);
         TextView ingredients = findViewById(R.id.ingredients_tv);
         TextView description = findViewById(R.id.description_tv);
         TextView aka = findViewById(R.id.also_known_tv);
@@ -89,7 +88,6 @@ public class DetailActivity extends AppCompatActivity {
             }
         }
         //set texts
-        nametv.setText(filler(sandwich.getMainName()));
         description.setText(filler(sandwich.getDescription()));
         origin.setText(filler(sandwich.getPlaceOfOrigin()));
         aka.setText(filler(ingreds));
