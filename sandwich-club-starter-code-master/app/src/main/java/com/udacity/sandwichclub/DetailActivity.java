@@ -90,8 +90,8 @@ public class DetailActivity extends AppCompatActivity {
         //set texts
         description.setText(filler(sandwich.getDescription()));
         origin.setText(filler(sandwich.getPlaceOfOrigin()));
-        aka.setText(filler(ingreds));
-        ingredients.setText(filler(akas));
+        aka.setText(filler(akas));
+        ingredients.setText(filler(ingreds));
 
     }
 
